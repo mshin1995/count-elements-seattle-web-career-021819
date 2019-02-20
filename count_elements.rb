@@ -4,7 +4,8 @@ def count_elements(array)
     if new_hash[elements]
       new_hash[elements] += 1
     else
-  end
+      new_hash[elements] = 1
+    end
   new_hash
 end
  
