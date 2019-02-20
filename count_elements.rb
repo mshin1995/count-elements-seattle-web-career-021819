@@ -1,9 +1,9 @@
 def count_elements(array)
   new_hash = {}
-  count = 0 
   array.each do |elements|
-    new_hash[elements] = count
-    count += 1
+    if new_hash[elements]
+      new_hash[elements] += 1
+    else
   end
   new_hash
 end
